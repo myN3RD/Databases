@@ -1,0 +1,21 @@
+MySQL is a SQL Database (Structur Query Leanguage)
+
+- works with "Tables"
+
+-In each Table you have Fields or Columns
+
+
+
+Has a    DATASHEMA -> All Data in a Table has to fit!
+
+id, name, age
+
+Has     DATARELATIONS -> Tables are connectet
+         One-to-One
+         One-to-Many
+         Many-to-Many
+         
+         
+                          SQL QUERIES
+         SQL Keyword / Syntax     Parameters / Data
+         
