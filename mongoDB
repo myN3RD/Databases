@@ -1,3 +1,15 @@
 mongoDB is a NoSQL Database
 
+is using Collections
+            |
+          Documents
+          { name: 'Max'. age: 28 }
+          { name: 'Paul' }              => Documents with different structure in the same Document
+          
+- Does not have a strict Data Shema (No Structure required)
+- No Data Relations
 
+
+Horizontal vs Vertical Scaling
+
+- NoSQL is really good with horizontal scaling
