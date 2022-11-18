@@ -24,7 +24,7 @@ db.collection.updateOne() -> will update one element
 db.collection.updateMany() -> will update multiple elements
 
 EXAMPLE:
-dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id)}, {$set: this});
-                                                                                         ↑
+dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id) }, { $set: this });
+                                                                                          ↑
                                                                                     DESCRIPE THE OPERATION we want to make
                                                                                    
