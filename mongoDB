@@ -17,3 +17,8 @@ Horizontal vs Vertical Scaling
 
 
 DOCS Overview            https://www.mongodb.com/docs/manual/crud/
+
+
+
+db.collection.updateOne() -> will update one element
+db.collection.updateMany() -> will update multiple elements
