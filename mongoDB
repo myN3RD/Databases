@@ -19,9 +19,14 @@ Horizontal vs Vertical Scaling
 DOCS Overview            https://www.mongodb.com/docs/manual/crud/
 
 
-
+UPDATE
 db.collection.updateOne() -> will update one element
 db.collection.updateMany() -> will update multiple elements
+
+DELETE
+db.collection('products').deleteOne();
+db.collection('products').deleteMany({});
+
 
 EXAMPLE:
 dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id) }, { $set: this });
