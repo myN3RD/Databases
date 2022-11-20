@@ -63,7 +63,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;      // = a constructor
 
-const productSchema = new Schema();   // Schema Object
+const productSchema = new Schema({   // Schema Object
 
+});
                                                                                     
                                                                                    
