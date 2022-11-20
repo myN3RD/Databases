@@ -56,5 +56,14 @@ MONGOOSE
 - tries to enable to work with the data instead of the queries
 - Is an ODM  a Object-Document Mapping Library
 
+
+Integration:
+
+const mongoose = require('mongoose');
+
+const Schema = mongoose.Schema;      // = a constructor
+
+const productSchema = new Schema();   // Schema Object
+
                                                                                     
                                                                                    
