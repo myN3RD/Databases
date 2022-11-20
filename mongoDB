@@ -1,4 +1,7 @@
-mongoDB is a NoSQL Database
+mongoDB 
+
+- is a NoSQL Database
+- no relational Database -> its a document database
 
 1. REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
 2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
@@ -50,6 +53,8 @@ _______________________________
 MONGOOSE
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
+- tries to enable to work with the data instead of the queries
+- Is an ODM  a Object-Document Mapping Library
 
                                                                                     
                                                                                    
