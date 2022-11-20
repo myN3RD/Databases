@@ -63,8 +63,14 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;      // = a constructor
 
-const productSchema = new Schema({   // Schema Object
-
-});
+const productSchema = new Schema({  // Schema Object
+  // we discribe the data-schema, how the product should look like -> with key-value pairs!
+  // KEYS  TYPE  (= PAIR)
+  // ↓      ↓
+  title: {type: String, required: true},  // here we create an type Object cause of the {}              
+  price: {type: Number, required: true},
+  description: {type: String, required: true},
+  imageUrl: {type: String, required: true}
+});   
                                                                                     
                                                                                    
