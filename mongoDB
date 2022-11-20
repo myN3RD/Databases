@@ -1,7 +1,13 @@
 mongoDB is a NoSQL Database
 
-is using Collections
-            |
+1. REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
+2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
+3. CONNECT WITH MONGODB COMPASS -> THE APP 
+
+
+THEORIE
+- is using Collections
+             |
           Documents
           { name: 'Max'. age: 28 }
           { name: 'Paul' }              => Documents with different structure in the same Document
@@ -13,6 +19,8 @@ is using Collections
 Horizontal vs Vertical Scaling
 
 - NoSQL is really good with horizontal scaling
+
+__________________________________________________
 
 
 
