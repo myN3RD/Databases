@@ -34,7 +34,7 @@ dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id)
                                                                                     DESCRIPE THE OPERATION we want to make
                                                                                     
                                                                                     
-$set 
-$in
+$set  The $set operator replaces the value of a field with the specified value.
+$in   is a query operator -> Matches any of the values specified in an array.
                                                                                     
                                                                                    
