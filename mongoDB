@@ -72,5 +72,12 @@ const productSchema = new Schema({  // Schema Object
   description: {type: String, required: true},
   imageUrl: {type: String, required: true}
 });   
+
+CRUD by mongoose
+
+C
+R
+U
+D .findByIdAndRemove(prodId)           // "delete by mongoose"
                                                                                     
                                                                                    
