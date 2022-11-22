@@ -81,6 +81,7 @@ U
 D .findByIdAndRemove(prodId)           // "delete by mongoose"
 
 
-.populate     ->
+.select()       ->
+.populate()     ->
                                                                                     
                                                                                    
