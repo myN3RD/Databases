@@ -83,5 +83,7 @@ D .findByIdAndRemove(prodId)           // "delete by mongoose"
 
 .select()       ->
 .populate()     ->
+.method         -> userSchema.methods.addToCart = function() {     with .methods (Object) allows us to add our own methods, by simply adding them
+
                                                                                     
                                                                                    
