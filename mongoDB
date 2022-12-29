@@ -37,7 +37,7 @@ CREATE
 db.collection.insertOne({}) -> will create One element
 db.collection.insertMany({}) -> will create many element
 
-READ
+READ                                lektion 329
 db.collection.find()
 
 
