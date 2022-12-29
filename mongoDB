@@ -33,6 +33,9 @@ __________________________________________________
 
                   CRUD  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
 
+depending on the problem, we use crud on the server (more automatic stufff like)
+                    ... , we use crud with the terminal (more manual stuff like)
+
 CREATE
 db.collection.insertOne({}) -> will create One element
 db.collection.insertMany({}) -> will create many element
