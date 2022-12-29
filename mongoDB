@@ -12,7 +12,7 @@ __________________________________________________
 
                   THEORY
       
-- is using Collections
+- NoSQL Database is using COLLECTIONS
              |
           Documents
           { name: 'Max'. age: 28 }
