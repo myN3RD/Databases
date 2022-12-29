@@ -10,7 +10,7 @@ mongoDB
 
 __________________________________________________
 
-      THEORY
+                  THEORY
       
 - is using Collections
              |
@@ -30,7 +30,7 @@ __________________________________________________
 
 
 
-DOCS Overview            https://www.mongodb.com/docs/manual/crud/
+                  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
 
 
 UPDATE
@@ -54,7 +54,7 @@ $in   is a query operator -> Matches any of the values specified in an array.
 __________________________________________________
 
 
-MONGOOSE
+                  MONGOOSE
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
 - tries to enable to work with the data instead of the queries
