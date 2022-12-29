@@ -31,7 +31,14 @@ __________________________________________________
 
 
 
-                  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
+                  CRUD  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
+
+CREATE
+db.collection.insertOne({}) -> will create One element
+db.collection.insertMany({}) -> will create many element
+
+READ
+db.collection.find()
 
 
 UPDATE
