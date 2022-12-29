@@ -8,7 +8,10 @@ mongoDB
 3. CONNECT WITH MONGODB COMPASS -> THE APP 
 
 
-THEORIE
+__________________________________________________
+
+      THEORY
+      
 - is using Collections
              |
           Documents
@@ -47,7 +50,8 @@ dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id)
                                                                                     
 $set  The $set operator replaces the value of a field with the specified value.
 $in   is a query operator -> Matches any of the values specified in an array.
-_______________________________
+
+__________________________________________________
 
 
 MONGOOSE
