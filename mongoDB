@@ -2,6 +2,7 @@ mongoDB
 
 - is a NoSQL Database
 - no relational Database -> its a document database
+- recommended, if there is one user generating many posts etc. like Instagram and so one..
 
 1. REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
 2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
