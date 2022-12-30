@@ -87,7 +87,10 @@ __________________________________________________
 
 Integration:
 
+npm install mongoose
+
 const mongoose = require('mongoose');
+
 
 const Schema = mongoose.Schema;      // = a constructor
 
