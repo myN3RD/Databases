@@ -65,6 +65,19 @@ $in   is a query operator -> Matches any of the values specified in an array.
 __________________________________________________
 
 
+                  VALIDATION
+      
+      
+assert
+
+
+
+
+
+__________________________________________________
+
+
+
                   MONGOOSE
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
