@@ -85,12 +85,14 @@ __________________________________________________
 - Is an ODM  a Object-Document Mapping Library
 
 
-Integration:
+1. Integration:
 
 npm install mongoose
 
 const mongoose = require('mongoose');
 
+
+2. Creating a Schema
 
 const Schema = mongoose.Schema;      // = a constructor
 
