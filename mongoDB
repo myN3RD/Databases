@@ -107,6 +107,13 @@ const productSchema = new Schema({      or      const productSchema = new mongoo
   imageUrl: {type: String, required: true}
 });   
 
+
+
+.save -> to safe a document into a colletion (or adding it)
+
+
+_________________
+
 CRUD by mongoose
 
 C
