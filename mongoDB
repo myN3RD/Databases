@@ -5,18 +5,20 @@ mongoDB
 - recommended, if there is one user generating many posts etc. like Instagram and so one..
 
 
-LOCAL DATABASE
-
-Community Server      https://www.mongodb.com/try/download/community
-
-
-
 Real Database Server
 
 1. REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
 2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
 3. CONNECT WITH MONGODB COMPASS -> THE APP 
 
+
+
+
+LOCAL DATABASE
+
+Community Server      https://www.mongodb.com/try/download/community
+
+npm install mongodb
 
 __________________________________________________
 
