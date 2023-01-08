@@ -42,6 +42,19 @@ Horizontal vs Vertical Scaling
 
 - NoSQL is really good with horizontal scaling
 
+
+__________________________________________________
+
+
+                  HOW TO  INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB
+      
+      
+input get, input storing in database, input get/fetch from database
+
+Fester 1: Input -> post req -> save() in db -> res 201
+
+Fenster 2: Input -> get req -> find() in db -> return (data) + 200
+
 __________________________________________________
 
 
