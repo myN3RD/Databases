@@ -22,7 +22,12 @@ Community Server      https://www.mongodb.com/try/download/community
 
 2. const { MongoClient } = require('mongodb');
 
-3. in the mac local console in the correct PATH where mongod is ---> sudo ./mongod --dbpath db/
+
+  in the TERMINAL
+  
+3. go to the correct PATH -> cd /usr/local/mongodb/bin
+
+4. in the correct PATH where mongod is ---> sudo ./mongod --dbpath db/
 
 __________________________________________________
 
