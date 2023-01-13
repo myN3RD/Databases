@@ -124,7 +124,8 @@ npm install mongoose
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true});
+mongoose.connect('mongodb://127.0.0.1:27017/userDB', {useNewUrlParser: true});
+mongoose.set('strictQuery', true);  // line from error warning
 
 
 2. Creating a Schema
