@@ -14,24 +14,8 @@ Real Database Server
 
 
 
-LOCAL DATABASE
-
-Community Server      https://www.mongodb.com/try/download/community
-
-1. npm install mongodb
-
-2. const { MongoClient } = require('mongodb');
-
-
-  in the TERMINAL
-  
-3. go to the correct PATH -> cd /usr/local/mongodb/bin
-
-4. in the correct PATH where mongod is ---> sudo ./mongod --dbpath db/
-
-__________________________________________________
-
                   THEORY
+__________________________________________________
       
 - NoSQL Database is using COLLECTIONS
              |
@@ -48,10 +32,31 @@ Horizontal vs Vertical Scaling
 - NoSQL is really good with horizontal scaling
 
 
+
+
+                LOCAL DATABASE
 __________________________________________________
 
 
+Community Server      https://www.mongodb.com/try/download/community
+
+1. npm install mongodb
+
+2. const { MongoClient } = require('mongodb');
+
+
+  in the TERMINAL
+  
+3. go to the correct PATH -> cd /usr/local/mongodb/bin
+
+4. in the correct PATH where mongod is ---> sudo ./mongod --dbpath db/
+
+
+
+
+
                   HOW TO  INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB
+__________________________________________________
       
       
 input get, input storing in database, input get/fetch from database
@@ -60,11 +65,12 @@ Fester 1: Input -> post req -> save() in db -> res 201
 
 Fenster 2: Input -> get req -> find() in db -> return (data) + 200
 
-__________________________________________________
+
 
 
 
                   CRUD  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
+__________________________________________________
 
 depending on the problem, we use crud on the server (more automatic stufff like)
                     ... , we use crud with the terminal (more manual stuff like)
@@ -95,11 +101,11 @@ dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id)
 $set  The $set operator replaces the value of a field with the specified value.
 $in   is a query operator -> Matches any of the values specified in an array.
 
-__________________________________________________
+
 
 
                   VALIDATION
-      
+__________________________________________________      
       
 assert
 
@@ -107,11 +113,11 @@ assert
 
 
 
-__________________________________________________
 
 
 
                   MONGOOSE
+__________________________________________________
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
 - tries to enable to work with the data instead of the queries
@@ -150,7 +156,7 @@ const productSchema = new Schema({      or      const productSchema = new mongoo
 
 _________________
 
-CRUD by mongoose
+                CRUD by mongoose
 
 C
 R
