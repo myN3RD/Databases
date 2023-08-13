@@ -5,17 +5,26 @@ mongoDB
 - recommended, if there is one user generating many posts etc. like Instagram and so one..
 
 
-Real Database Server
 
-1. REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
+
+REAL DATABASE SERVER
+____________________
+
+1. GO TO NORMAL WEBSITE AND REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
+1.1 Press RESUME and wait
 2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
+NOTE: access possibilities are changing by time due to the website
+-> we need a code to connect like this: mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/
+-> create in app.js
+-> create a const db = 'mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/'
+->                                              ⬆️ FILL THIS OUT
 3. CONNECT WITH MONGODB COMPASS -> THE APP 
 
 
 
 
-                  THEORY
-__________________________________________________
+          THEORY
+          ______
       
 - NoSQL Database is using COLLECTIONS
              |
@@ -34,9 +43,8 @@ Horizontal vs Vertical Scaling
 
 
 
-                LOCAL DATABASE
-__________________________________________________
-
+          LOCAL DATABASE
+          ______________
 
 Community Server      https://www.mongodb.com/try/download/community
 
@@ -45,7 +53,7 @@ Community Server      https://www.mongodb.com/try/download/community
 2. const { MongoClient } = require('mongodb');
 
 
-  in the TERMINAL
+  in TERMINAL:
   
 3. go to the correct PATH -> cd /usr/local/mongodb/bin
 
@@ -55,9 +63,8 @@ Community Server      https://www.mongodb.com/try/download/community
 
 
 
-                  HOW TO  INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB
-__________________________________________________
-      
+          HOW TO INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB
+          _________________________________________________________     
       
 input get, input storing in database, input get/fetch from database
 
@@ -68,12 +75,14 @@ Fenster 2: Input -> get req -> find() in db -> return (data) + 200
 
 
 
+          CRUD - DOCS Overview            
+          ____________________
 
-                  CRUD  DOCS Overview            https://www.mongodb.com/docs/manual/crud/
-__________________________________________________
+https://www.mongodb.com/docs/manual/crud/
 
 depending on the problem, we use crud on the server (more automatic stufff like)
                     ... , we use crud with the terminal (more manual stuff like)
+
 
 CREATE
 db.collection.insertOne({}) -> will create One element
@@ -81,7 +90,6 @@ db.collection.insertMany({}) -> will create many element
 
 READ                                lektion 329
 db.collection.find()
-
 
 UPDATE
 db.collection.updateOne() -> will update one element
@@ -104,8 +112,8 @@ $in   is a query operator -> Matches any of the values specified in an array.
 
 
 
-                  VALIDATION
-__________________________________________________      
+          VALIDATION
+          __________      
       
 assert
 
@@ -116,8 +124,8 @@ assert
 
 
 
-                  MONGOOSE
-__________________________________________________
+          MONGOOSE
+          ________
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
 - tries to enable to work with the data instead of the queries
@@ -154,9 +162,10 @@ const productSchema = new Schema({      or      const productSchema = new mongoo
 .save -> to safe a document into a colletion (or adding it)
 
 
-_________________
 
-                CRUD by mongoose
+
+CRUD by mongoose
+________________
 
 C
 R
