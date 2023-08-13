@@ -27,6 +27,40 @@ NOTE: access possibilities are changing by time due to the website
 
 
 
+BUILDING A CONNECTION
+_____________________
+
+app.js file:
+
+const mongoConnectImport = require("./db/database.js"); // mongodb connection
+
+mongoConnectImport((client) => {
+  console.log(client);
+  app.listen(3000);
+});
+
+db file:
+
+const mongodb = require("mongodb");
+const Client = mongodb.MongoClient;
+
+const mongoConnect = (callback) => {
+  Client.connect(
+    "mongodb+srv://Tobias:GlGyWZKyJIVw7LXA@cluster0.aisrby5.mongodb.net/"
+  )
+    .then((client) => {
+      console.log("CONNECTED");
+      callback(client);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+module.exports = mongoConnect;
+
+
+
 
           THEORY
           ______
@@ -134,8 +168,33 @@ assert
 
 - Mongoose is the same for MongoDb like Sequelize for MySQL
 - tries to enable to work with the data instead of the queries
-- Is an ODM  a Object-Document Mapping Library
+- Is an ODM -> a Object-Document Mapping Library for mongoDb
 
+
+app.js file:
+
+require("./db/database"); // mongoose connection
+
+
+db file:
+
+const dbURL =
+  "mongodb+srv://Tobias:GlGyWZKyJIVw7LXA@cluster0.aisrby5.mongodb.net/";
+// require(db);
+
+// NOTE we are using moongoose
+// SETUP CONNECTION
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(dbURL)
+  .then(() => console.log("CONNECTED"))
+  .catch((err) => console.log(err));
+
+
+
+
+_______________
 
 1. Integration:
 
