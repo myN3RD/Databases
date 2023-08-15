@@ -20,6 +20,8 @@ NOTE: access possibilities are changing by time due to the website
 ->                                              ⬆️ FILL THIS OUT
 ->                      'mongodb+srv://Tobias:XXXXXXXXX@cluster0.aisrby5.mongodb.net/'
                                            without the <> !!!
+                        'mongodb+srv://Tobias:XXXXXXXXX@cluster0.aisrby5.mongodb.net/DATABASENAME?'
+                                                                                        ⬆️ This will create the new database
 3. CONNECT WITH MONGODB COMPASS -> THE APP 
 
 
@@ -155,10 +157,6 @@ $in   is a query operator -> Matches any of the values specified in an array.
           __________      
       
 assert
-
-
-
-
 
 
 
