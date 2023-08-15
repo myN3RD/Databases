@@ -227,6 +227,8 @@ const productSchema = new Schema({      or      const productSchema = new mongoo
   // we discribe the data-schema, how the product should look like -> with key-value pairs!
   // KEYS  TYPE  (= PAIR)
   // ↓      ↓
+
+  "name": "bob",
   title: {type: String, required: true},  // here we create an type Object cause of the {}              
   price: {type: Number, required: true},
   description: {type: String, required: true},
