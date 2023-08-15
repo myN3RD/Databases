@@ -10,22 +10,36 @@ mongoDB
 REAL DATABASE SERVER
 ____________________
 
+npm install --save mongodb
+
 1. GO TO NORMAL WEBSITE AND REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
 1.1 Press RESUME and wait
 2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
 NOTE: access possibilities are changing by time due to the website
 -> we need a code to connect like this: mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/
--> create in app.js
--> create a const db = 'mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/'
-->                                              ⬆️ FILL THIS OUT
-->                      'mongodb+srv://Tobias:XXXXXXXXX@cluster0.aisrby5.mongodb.net/'
-                                           without the <> !!!
-                        'mongodb+srv://Tobias:XXXXXXXXX@cluster0.aisrby5.mongodb.net/DATABASENAME?'
-                                                                                        ⬆️ This will create the new database
+
+
+in app.js:
+
+require("dotenv").config(); // accessing the secret keys
+
+
+// MIDDLEWARES
+app.use(express.json()); // for db communication & connection
+
+
+create a .env file
+
+ADD:
+
+MONGODB_URL=mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/    NOTE: NO '' -> cause Key Value Pairs
+->                                   ⬆️ FILL THIS OUT
+->         =mongodb+srv://Tobias:XXXXXXXXX@cluster0.aisrby5.mongodb.net/
+                         without the <> !!!
+
+                                                                                        
 3. CONNECT WITH MONGODB COMPASS -> THE APP 
 
-
-4. npm install --save mongodb
 
 
 
