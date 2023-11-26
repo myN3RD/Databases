@@ -26,6 +26,18 @@ mongoDB
 - DB ACCESS settings FROM ANYWHERE -> 0.0.0.0/0 -> add to IP Access List under Security Settings in the Cluster
 
 
+mongo shell installation
+________________________
+
+https://brew.sh/
+
+in terminal: 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+needs around 5min!
+
+IF THERE IS AN ERR -> --all --install --force
+
 
 
           REAL DATABASE SERVER
