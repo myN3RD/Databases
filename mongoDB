@@ -1,27 +1,56 @@
+MONGOOSE - 187
+CRUD by mongoose - 246
+
+**********************
+
+
+
+
+
 mongoDB 
 
 - is a NoSQL Database
 - no relational Database -> its a document database
 - recommended, if there is one user generating many posts etc. like Instagram and so one..
+- uses BSON dataformat 
 
 
 
 
-REAL DATABASE SERVER
-____________________
+          USAGE
+          _____
 
-npm install --save mongodb
+- REMOTE DATABASE  -> ATLAS -> https://account.mongodb.com/account/login?signedOut=true
+- mongoDB GUI -> Compass App
 
-1. GO TO NORMAL WEBSITE AND REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
+- DB ACCESS settings FROM ANYWHERE -> 0.0.0.0/0 -> add to IP Access List under Security Settings in the Cluster
+
+
+
+
+          REAL DATABASE SERVER
+          ____________________
+
+npm i --save mongodb
+
+1.  GO TO NORMAL WEBSITE AND REFRESH IP -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#security/network/accessList
 1.1 Press RESUME and wait
-2. CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
+2.  CONNECT -> https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#clusters -> CONNECT BUTTON -> CONNECT WITH APP 
+
 NOTE: access possibilities are changing by time due to the website
 -> we need a code to connect like this: mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/
+                                        mongodb+srv://Tobias:1234567899@cluster0.aisrby5.mongodb.net/
 
 
 in app.js:
 
+OLD
 require("dotenv").config(); // accessing the secret keys
+
+NEW
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
+
 
 
 // MIDDLEWARES
@@ -43,8 +72,8 @@ MONGODB_URL=mongodb+srv://Tobias:<password>@cluster0.aisrby5.mongodb.net/    NOT
 
 
 
-BUILDING A CONNECTION
-_____________________
+          BUILDING A CONNECTION
+          _____________________
 
 app.js file:
 
