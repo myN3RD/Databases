@@ -230,10 +230,30 @@ assert
 - tries to enable to work with the data instead of the queries
 - Is an ODM -> a Object-Document Mapping Library for mongoDb
 
+npm i mongoose@5 -> stable version
+
 
 app.js file:
 
-require("./db/database"); // mongoose connection
+const mongoose = require('mongoose');
+?? require("./db/database");
+
+
+COPY PASTE:
+// = MongoClient constructor
+mongoose.connect(DB, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
+}).then(con => {
+  console.log(con.connections);
+  console.log('DB Connection successful!');
+});
+
+
+mongoose.set('strictQuery', true);  // line from error warning
+
 
 
 db file:
@@ -242,9 +262,6 @@ const dbURL =
   "mongodb+srv://Tobias:GlGyWZKyJIVw7LXA@cluster0.aisrby5.mongodb.net/";
 // require(db);
 
-// NOTE we are using moongoose
-// SETUP CONNECTION
-const mongoose = require("mongoose");
 
 mongoose
   .connect(dbURL)
@@ -253,17 +270,9 @@ mongoose
 
 
 
-
-_______________
-
 1. Integration:
 
-npm install mongoose
 
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://127.0.0.1:27017/userDB', {useNewUrlParser: true});
-mongoose.set('strictQuery', true);  // line from error warning
 
 
 2. Creating a Schema
