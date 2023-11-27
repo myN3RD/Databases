@@ -20,11 +20,18 @@ mongoDB
           USAGE
           _____
 
-- REMOTE DATABASE  -> ATLAS -> https://account.mongodb.com/account/login?signedOut=true
+REMOTE
+______
+
+- REMOTE (CLOUD) DATABASE  -> ATLAS -> https://account.mongodb.com/account/login?signedOut=true
 - mongoDB GUI -> Compass App
 
 - DB ACCESS settings FROM ANYWHERE -> 0.0.0.0/0 -> add to IP Access List under Security Settings in the Cluster
 
+
+
+LOCAL
+_____
 
 mongo shell installation
 ________________________
