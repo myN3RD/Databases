@@ -324,6 +324,22 @@ ________________
 // creaing a MODEL out of the SCHEMA
 const Tour = mongoose.model('Tour'); -> is a convention to write models (ans var names) in uppercase!
 
+// created a new document out of the new Tour Model
+const testTour = new Tour({
+  name: 'The Forest Hyker 2', 
+  rating: 4.7, 
+  price: 497
+});
+
+testTour.save()
+  .then(doc => {
+    console.log(doc);
+    })
+    .catch(err => {
+    console.log('ERROR 🙅‍♂️:', err)
+  });
+
+
 
 CRUD by mongoose
 ________________
