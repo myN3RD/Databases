@@ -226,6 +226,7 @@ assert
           MONGOOSE
           ________
 
+- mongoose is all about model
 - Mongoose is the same for MongoDb like Sequelize for MySQL
 - tries to enable to work with the data instead of the queries
 - Is an ODM -> a Object-Document Mapping Library for mongoDb
@@ -270,22 +271,42 @@ mongoose
 
 
 
-1. Integration:
+Creating a Schema
+_________________
+
+const Schema = mongoose.Schema;      // = constructor
+const Schema = new mongoose.Schema({}); // Schema Object 
+
+MOST SIMPLE SCHEMA:
+
+const Schema = new mongoose.Schema({
+  name: String,
+  rating: Number,
+  price: Number
+});
 
 
+WITH SCHEMA TYPE OPTIONS:
+
+const tourSchema = new mongoose.Schema({
+  name: {           // OPTION SCHEMA
+    type: String,
+    required: [true, 'A Tout must have a name'] // in [] -> is the err message
+  },
+  rating: Number,
+  price: {
+    type: Number,
+    required: [true, 'A Tout must have a price']
+  }
+});
 
 
-2. Creating a Schema
-
-const Schema = mongoose.Schema;      // = a constructor
-
-const productSchema = new Schema({      or      const productSchema = new mongoose.Schema({       // Schema Object 
 
   // we discribe the data-schema, how the product should look like -> with key-value pairs!
   // KEYS  TYPE  (= PAIR)
   // ↓      ↓
 
-  "name": "bob",
+  name: "bob",
   title: {type: String, required: true},  // here we create an type Object cause of the {}              
   price: {type: Number, required: true},
   description: {type: String, required: true},
@@ -297,6 +318,11 @@ const productSchema = new Schema({      or      const productSchema = new mongoo
 .save -> to safe a document into a colletion (or adding it)
 
 
+CREATING A MODEL
+________________
+
+// creaing a MODEL out of the SCHEMA
+const Tour = mongoose.model('Tour'); -> is a convention to write models (ans var names) in uppercase!
 
 
 CRUD by mongoose
