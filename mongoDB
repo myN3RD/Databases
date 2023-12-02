@@ -349,12 +349,13 @@ testTour.save()
 CRUD by mongoose
 ________________
 
-C
+C .create()
 R .findById()
-U
-D .findByIdAndRemove(prodId)           
+U .findByIdAndUpdate()
+D .findByIdAndDelete()           
 
 
+.find()         -> will find all data
 .select()       ->
 .populate()     ->
 .method         -> userSchema.methods.addToCart = function() {     with .methods (Object) allows us to add our own methods, by simply adding them
