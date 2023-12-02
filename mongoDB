@@ -350,9 +350,9 @@ CRUD by mongoose
 ________________
 
 C
-R
+R .findById()
 U
-D .findByIdAndRemove(prodId)           // "delete by mongoose"
+D .findByIdAndRemove(prodId)           
 
 
 .select()       ->
