@@ -183,7 +183,7 @@ Fenster 2: Input -> get req -> find() in db -> return (data) + 200
 
 https://www.mongodb.com/docs/manual/crud/
 
-depending on the problem, we use crud on the server (more automatic stufff like)
+depending on the problem, we use crud on the server (more automatic stuff like)
                     ... , we use crud with the terminal (more manual stuff like)
 
 
@@ -192,22 +192,27 @@ db.collection.insertOne({}) -> will create One element
 db.collection.insertMany({}) -> will create many element
 
 READ                                lektion 329
-db.collection.find()
+db.collection.find() -> whole collection
+db.collection.findById() -> single data entry
+
+          NOTE:
+          in mongodb id => _id  -> see EXAMPLE BELOW
 
 UPDATE
 db.collection.updateOne() -> will update one element
 db.collection.updateMany() -> will update multiple elements
-
-DELETE
-db.collection('products').deleteOne();
-db.collection('products').deleteMany({});
 
 
 EXAMPLE:
 dbOp = db.collection('prodcuts').updateOne({ _id: new mongodb.ObjectId(this._id) }, { $set: this });
                                                                                           ↑
                                                                                     DESCRIPE THE OPERATION we want to make
-                                                                                    
+
+DELETE
+db.collection('products').deleteOne();
+db.collection('products').deleteMany({});
+
+
                                                                                     
 $set  The $set operator replaces the value of a field with the specified value.
 $in   is a query operator -> Matches any of the values specified in an array.
