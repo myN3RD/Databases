@@ -357,10 +357,11 @@ D .findByIdAndDelete()
   .deleteMany()
 
 
-.find()         -> will find all data
-.select()       ->
-.populate()     ->
-.method         -> userSchema.methods.addToCart = function() {     with .methods (Object) allows us to add our own methods, by simply adding them
+.find()          -> will find all data                                                                               ⬇️ filter starts with ?.... and  the this key value pair syntax
+.find(req.query) -> BEFORE we have to declare our query we want to "filter" in POSTMAN -> localhost:8000/api/v1/tours?duration=5&difficulty=easy
+.select()        ->
+.populate()      ->
+.method          -> userSchema.methods.addToCart = function() {  with .methods (Object) allows us to add our own methods, by simply adding them
 
                                                                                     
                                                                                    
