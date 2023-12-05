@@ -355,7 +355,7 @@ D .findByIdAndDelete()
   .deleteMany()
 
 
-.find()          -> will find all data                                                                               ⬇️ filter starts with ?.... and  the this key value pair syntax
+.find()          -> will find all data -> is returning a query!                                                                            ⬇️ filter starts with ?.... and  the this key value pair syntax
 .find(req.query) -> BEFORE we have to declare our query we want to "filter" in POSTMAN -> localhost:8000/api/v1/tours?duration=5&difficulty=easy
 .select()        ->
 .populate()      ->
