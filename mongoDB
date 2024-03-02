@@ -361,5 +361,10 @@ D .findByIdAndDelete()
 .populate()      ->
 .method          -> userSchema.methods.addToCart = function() {  with .methods (Object) allows us to add our own methods, by simply adding them
 
-                                                                                    
+
+___________
+
+.sort          -> to sort in oposite direction we use - minus   -> this is excluding: useful for not showing passwords to the cliet for example
+limiting fields (= requesting just some of the fields)
+
                                                                                    
