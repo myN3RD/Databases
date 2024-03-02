@@ -367,4 +367,10 @@ ___________
 .sort          -> to sort in oposite direction we use - minus   -> this is excluding: useful for not showing passwords to the cliet for example
 limiting fields (= requesting just some of the fields)
 
+
+
+ANALISING (often used)
+_________
+
+
                                                                                    
