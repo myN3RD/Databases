@@ -275,11 +275,12 @@ mongoose
 
 
 
-Creating a Schema
+CREATING A SCHEMA
 _________________
 
 const Schema = mongoose.Schema;      // = constructor
 const Schema = new mongoose.Schema({}); // Schema Object 
+
 
 MOST SIMPLE SCHEMA:
 
@@ -320,6 +321,7 @@ const tourSchema = new mongoose.Schema({
 
 
 .save -> to safe a document into a colletion (or adding it)
+
 
 
 CREATING A MODEL
@@ -381,6 +383,17 @@ _________
 lecture: 102
           
 https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/
+
+
+
+STAGES
+______
+
+$match
+$unwind
+$sort
+$limit
+$group
 
 
 
