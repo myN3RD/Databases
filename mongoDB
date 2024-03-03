@@ -455,4 +455,13 @@ tourSchema.virtual('durationWeeks').get(function() { // when using this keyword 
 });
 
 
+
+MONGOOSE MIDDLEWARE
+___________________
+
+Documents Middleware:
+-> runs ONLY before the .save() and .create() command -> NOT .insert() for example!
+
+
+
                                                                                    
