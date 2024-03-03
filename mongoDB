@@ -410,5 +410,20 @@ $unwind -> to deconstruct an array field from the info documents -> and then out
 
 
 
+          VIRTUAL PROPERTIES
+          __________________
+
+= Fields we can define on our schema (which are not will be saved into our database)
+-> to saved some space
+
+like a conversion from miles to km/h -> this makes no sense to safe it into the db
+
+
+EXAMPLE:
+
+tourSchema.virtual('durationWeeks').get(function() { // when using this keyword -> we use a regular and NO arrow function!
+  return this.duration / 7; // cause there a 7 days in a week
+});
+
 
                                                                                    
