@@ -383,4 +383,19 @@ lecture: 102
 https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/
 
 
+
+* REAL BUSINESS PROBLEM (LIKE A FORECAST)
+_________________________________________
+
+lecture: 103
+
+
+STAGE:
+
+$unwind -> to deconstruct an array field from the info documents -> and then output one document for each element of the array
+
+
+
+
+
                                                                                    
