@@ -456,11 +456,26 @@ tourSchema.virtual('durationWeeks').get(function() { // when using this keyword 
 
 
 
-MONGOOSE MIDDLEWARE
+MONGOOSE MIDDLEWARE aka "HOCS" (pre save hoc , pre save middleware)
 ___________________
 
 Documents Middleware:
--> runs ONLY before the .save() and .create() command -> NOT .insert() for example!
+
+-> with 'save' HOOK
+-> runs ONLY before the .save() and .create() command (thats the "HOOK") -> NOT .insert() .findOne ... for example!#
+
+
+tourSchema.pre('save', function(next) {
+  this.slug = slugify(this.name, {lower: true});
+  next();
+});
+
+
+
+Query Middleware:
+
+-> with 'find' HOOK
+-> allows us to run functions before or after a certain query is executed
 
 
 
