@@ -429,6 +429,27 @@ like a conversion from miles to km/h -> this makes no sense to safe it into the 
 
 EXAMPLE:
 
+const mongoose = require('mongoose');
+
+const tourSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: [true, 'A Tour must have a name'],
+    unique: true,
+    trim: true
+  },
+  imageCover: {
+    type: String,
+    requiered: [true, 'A tour must have a cover image']
+  },
+
+// WE HAVE TO ADD THIS TO OUR SCHEMA !!!
+  {
+    toJSON: { virtuals: true},
+    toObject: { virtuals: true}
+  }
+);
+
 tourSchema.virtual('durationWeeks').get(function() { // when using this keyword -> we use a regular and NO arrow function!
   return this.duration / 7; // cause there a 7 days in a week
 });
