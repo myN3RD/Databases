@@ -393,6 +393,8 @@ _________
           VALIDATORS
           __________
 
+npm i validator
+
 https://github.com/validatorjs/validator.js
 -> SCROLL DOWN to the docs
 
