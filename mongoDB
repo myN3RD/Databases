@@ -5,7 +5,7 @@ LOCAL DATABASE - 152
 HOW TO INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB - 173
 CRUD - DOCS Overview  - 185
 
-MONGOOSE - 236
+MONGOOSE - 238
 CREATING A SCHEMA - 286
 CREATING A MODEL - 334
 CRUD by mongoose - 357
@@ -237,6 +237,8 @@ assert
 
           MONGOOSE
           ________
+
+https://mongoosejs.com/docs/index.html
 
 - mongoose is all about model
 - Mongoose is the same for MongoDb like Sequelize for MySQL
