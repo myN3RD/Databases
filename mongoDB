@@ -4,6 +4,7 @@ THEORY - 131
 LOCAL DATABASE - 152
 HOW TO INPUT -> STRORING IN DB -> DISPLAYING DATA FROM DB - 173
 CRUD - DOCS Overview  - 185
+DATA MODELLING
 
 MONGOOSE - 238
 CREATING A SCHEMA - 286
@@ -247,6 +248,34 @@ $in   is a query operator -> Matches any of the values specified in an array.
       
 assert
 
+
+
+          DATA MODELLING
+          ______________
+
+goal is to structur (unstructured) data into a logical way
+
+
+1) Types of relationsships between data
+
+
+1:1
+
+1:MANY          ->          1:FEW          1:MANY          1:TON
+
+MANY:MANY
+
+
+2) Referencing vs. Embedding
+
+Referenced/ Normalized -> means SEPERATE data-sets
+
+Embedded / Denormalized -> means
+
+
+
+
+4) Types of referencing
 
 
 
