@@ -254,6 +254,12 @@ assert
           ______________
 
 goal is to structur (unstructured) data into a logical way
+1:TON or a MANY:MANY relationship is best to reference! (instedt of embedding)
+DONT ALLOW array to grow indefinitely.  -> use CHILD REFERENCING for 1:MANY
+                                        -> use PARENT REFERENCING for 1:TON
+
+use TWO-WAY REFERENCING for MANY:MANY
+
 
 
 1) Types of relationsships between data
@@ -269,8 +275,10 @@ MANY:MANY
 2) Referencing vs. Embedding
 
 Referenced/ Normalized -> means SEPERATE data-sets
+-> use when data is updated a lot
 
 Embedded / Denormalized -> means
+-> use when data is mostly read but rarely updated
 
 
 
