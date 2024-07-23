@@ -49,3 +49,17 @@ command:  shutdown nosave
           shutdown save
 
 
+
+
+          COMMANDS
+          ________
+
+info
+info server
+info memory
+info stats
+info replication
+info cluster
+info keyspace
+
+
