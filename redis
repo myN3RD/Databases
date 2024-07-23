@@ -10,7 +10,12 @@ NoSQL Database
           START/STOP REDIS
           ________________
 
-ggo to terminal on mac
+go to terminal on mac
 
 start: redis-server
 stop: Ctrl-C
+
+
+!!! open new terminal 
+
+command: redis-cli
