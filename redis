@@ -18,7 +18,16 @@ stop: Ctrl-C
 
 !!! open new terminal 
 
-command: redis-cli
+
+          CONNECT/SHUTDOWN  REDIS SERVER
+          ______________________________
+
+NOTE: we can connect as many connections to the server as we want
+
+
+
+
+command: redis-cli 
 
 
 
@@ -32,3 +41,11 @@ in the second terminal tab we see -> (after running) redis-cli -> 127.0.0.1:6379
 - we can test this with typing   ping
 
 - we get a PONG back
+
+
+
+          "DISCONNECT"
+command:  shutdown nosave
+          shutdown save
+
+
