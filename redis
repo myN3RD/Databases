@@ -4,3 +4,13 @@ Re mote  Di ctionary S erver
 
 
 NoSQL Database
+
+
+
+          START/STOP REDIS
+          ________________
+
+ggo to terminal on mac
+
+start: redis-server
+stop: Ctrl-C
