@@ -43,6 +43,7 @@ in the second terminal tab we see -> (after running) redis-cli -> 127.0.0.1:6379
 - we get a PONG back
 
 
+-cmd: quit
 
           "DISCONNECT"
 command:  shutdown nosave
@@ -54,6 +55,9 @@ command:  shutdown nosave
           COMMANDS
           ________
 
+https://redis.io/docs/latest/commands/
+
+
 info
 info server
 info memory
@@ -61,5 +65,8 @@ info stats
 info replication
 info cluster
 info keyspace
+
+
+
 
 
