@@ -19,3 +19,16 @@ stop: Ctrl-C
 !!! open new terminal 
 
 command: redis-cli
+
+
+
+in the  main terminal we see -> ...
+                              Port: 6379
+                              ...
+
+
+in the second terminal tab we see -> (after running) redis-cli -> 127.0.0.1:6379      -> 6379 is identical, means we are connected
+
+- we can test this with typing   ping
+
+- we get a PONG back
