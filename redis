@@ -4,6 +4,16 @@ Re mote  Di ctionary S erver
 
 
 NoSQL Database
+TOP Use Cases:
+
+- Caching
+- share user session data across servers
+- distributed locks
+- atomic counters (great for API trottling)
+- sorted sets
+
+redis helps us scale, track, coordinate and cache
+
 
 
 
