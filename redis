@@ -78,5 +78,22 @@ info keyspace
 
 
 
+          The Redis Data Storage
+          ______________________
+
+- Is a KEY based data structure
+- uses 'Key-Values'
+-> a KEY is definned by a value ->  Key = value
+          Value can be:
+                    - String
+                    - List 
+                    - Hash
+                    - Sets
+                    - etc.
+
+!!! Data can only be retrieved by knowing the exact key 
+
+
+
 
 
