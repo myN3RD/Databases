@@ -6,7 +6,7 @@ Re mote  Di ctionary S erver
 NoSQL Database
 TOP Use Cases:
 
-- Caching
+- Caching (data)
 - share user session data across servers
 - distributed locks
 - atomic counters (great for API trottling)
@@ -14,6 +14,8 @@ TOP Use Cases:
 
 redis helps us scale, track, coordinate and cache
 
+- doing real-time analytics
+- networking
 
 
 
@@ -107,6 +109,31 @@ set name 'Tom'
 set name "Tom"
 
 -> OK is the response
+
+
+DELETE KEYS
+___________
+
+del key
+(integer) 1
+
+testing:
+get key
+(nil)
+
+
+mmutiple del:
+del key1 key2 key3
+
+
+
+EXISTS
+______
+
+exists key
+exists key1 key2 key3
+
+
 
 
 
