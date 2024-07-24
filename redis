@@ -81,6 +81,8 @@ info keyspace
           The Redis Data Storage
           ______________________
 
+ALL DATA in Redis is built on KEYS
+
 - Is a KEY based data structure
 - uses 'Key-Values'
 -> a KEY is definned by a value ->  Key = value
@@ -92,6 +94,19 @@ info keyspace
                     - etc.
 
 !!! Data can only be retrieved by knowing the exact key 
+
+
+
+SET a KEY -> set key value
+GET a KEY -> get key
+
+
+Examples:
+
+set name 'Tom'
+set name "Tom"
+
+-> OK is the response
 
 
 
