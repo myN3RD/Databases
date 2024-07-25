@@ -94,6 +94,8 @@ is similar to db namespaces schemas
 3. choose the wanted index -> to get the wanted key value
 
 
+to list all keys in a index:
+keys *
 
 
           The Redis Data Storage
