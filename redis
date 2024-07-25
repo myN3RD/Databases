@@ -135,6 +135,17 @@ exists key1 key2 key3
 
 
 
+EXPIRATION OPTION FOR KEYS
+__________________________
+
+set key value ex <- now the seconds (ex is seconds)
+              px <- (px is milliseconds)
+
+to check: ttl key                    (ttl => time to live)
+          pttl key           -> when using px
+
+
+
 
 
 
