@@ -79,6 +79,22 @@ info cluster
 info keyspace
 
 
+KEYSPACES
+_________
+
+is similar to db namespaces schemas
+
+"In my words:"
+
+1. choose the index:
+-> select 0, select 1, select 2 etc
+
+2. set the key value          (sets the key and value to the current choosen index)
+
+3. choose the wanted index -> to get the wanted key value
+
+
+
 
           The Redis Data Storage
           ______________________
