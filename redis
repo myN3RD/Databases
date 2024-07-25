@@ -135,14 +135,27 @@ exists key1 key2 key3
 
 
 
-EXPIRATION OPTION FOR KEYS
-__________________________
+          EXPIRATION OPTION FOR KEYS
+          __________________________
+
+NOTE: by default keys will never expire ("so they live forever")
 
 set key value ex <- now the seconds (ex is seconds)
               px <- (px is milliseconds)
 
 to check: ttl key                    (ttl => time to live)
           pttl key           -> when using px
+
+
+DELETE EXPIRATION
+_________________
+
+persist key
+
+
+
+
+
 
 
 
