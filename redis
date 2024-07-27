@@ -112,6 +112,9 @@ flashdb
 
 ALL DATA in Redis is built on KEYS
 
+-> its the way we organise data in redis
+
+
 - Is a KEY based data structure
 - uses 'Key-Values'
 -> a KEY is definned by a value ->  Key = value
