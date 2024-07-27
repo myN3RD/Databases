@@ -183,6 +183,32 @@ _________________
 persist key
 
 
+NAMING CONVENTIONS
+__________________
+
+Object-id:id
+
+user:100
+user:100:group
+user:100:friends
+
+
+Example:
+________
+
+set user:100 Adam
+set user:101 Amy
+set user:102 Ben
+
+set user:100:group HR
+set user:101:goup SALES
+
+set user:100:friend TOM
+set user:101:firends JOHN
+
+
+
+
 
 
 
