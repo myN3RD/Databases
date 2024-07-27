@@ -83,6 +83,7 @@ KEYSPACES
 _________
 
 is similar to db namespaces schemas
+-> is means this with schemas [0], [1], [2] etc.
 
 "In my words:"
 
@@ -96,6 +97,14 @@ is similar to db namespaces schemas
 
 to list all keys in a index:
 keys *
+
+
+DELETE ALL KEYS in a SPACE
+__________________________
+
+NOTE: all with flush be very careful
+
+flashdb
 
 
           The Redis Data Storage
