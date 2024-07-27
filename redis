@@ -86,7 +86,7 @@ is similar to db namespaces schemas
 
 "In my words:"
 
-1. choose the index:
+1. choose the "space" (like the index) :
 -> select 0, select 1, select 2 etc
 
 2. set the key value          (sets the key and value to the current choosen index)
