@@ -220,6 +220,7 @@ ONLY use in production, when having a large db!
 h?llo matches hello, hallo and hxllo
 h*llo matches hllo and heeeelo
 h[ae]llo matches hello and hallo - but NOT hillo
+h[a-z]llo -> this is really useful
 h[^e]llo matches hallo, hpllo - but NOT hello
 
 
