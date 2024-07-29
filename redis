@@ -2,6 +2,7 @@ re       di          s
 Re mote  Di ctionary S erver
 
 
+https://www.youtube.com/watch?v=G1rOthIU-uo&ab_channel=Fireship
 
 NoSQL Database
 TOP Use Cases:
@@ -110,7 +111,7 @@ flashdb
           The Redis Data Storage
           ______________________
 
-ALL DATA in Redis is built on KEYS
+ALL DATA (every data-point) in Redis is built on KEYS (is a key)
 
 -> its the way we organise data in redis
 
