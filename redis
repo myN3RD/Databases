@@ -224,6 +224,10 @@ h[a-z]llo -> this is really useful
 h[^e]llo matches hallo, hpllo - but NOT hello
 
 
+WHERE THE MAGIC HAPPENS:
+user* -> gives us all the users
+
+
 
 
 
