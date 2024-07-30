@@ -58,7 +58,7 @@ in the second terminal tab we see -> (after running) redis-cli -> 127.0.0.1:6379
 
 -cmd: quit
 
-          "DISCONNECT"
+          "DISCONNECT" A SERVER with SAVE and NOSAVE
 command:  shutdown nosave
           shutdown save
 
