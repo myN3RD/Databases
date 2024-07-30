@@ -1,3 +1,10 @@
+START/STOP REDIS                  -      30
+CONNECT/SHUTDOWN  REDIS SERVER    -      40
+COMMANDS                          -      75
+RENAME A KEY                      -     240
+
+
+
 re       di          s
 Re mote  Di ctionary S erver
 
@@ -226,6 +233,18 @@ h[^e]llo matches hallo, hpllo - but NOT hello
 
 WHERE THE MAGIC HAPPENS:
 user* -> gives us all the users
+
+
+
+          RENAME A KEY
+          ____________
+
+command:
+RENAME key newkey
+
+NOTE: if a key exists already it will be overwritten
+
+-> means its good to know if a key exists or not
 
 
 
