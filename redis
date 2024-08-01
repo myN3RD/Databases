@@ -254,6 +254,11 @@ renamex key newkey -> only possible if the key doesnt exist -> does not overwrit
 
 
 
+          HOW TO FIND A DATA TYPE of a KEY Value
+          ______________________________________
+
+type key
+
 
 
 
