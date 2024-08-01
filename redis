@@ -247,6 +247,12 @@ NOTE: if a key exists already it will be overwritten
 -> means its good to know if a key exists or not
 
 
+RENAMEX
+_______
+
+renamex key newkey -> only possible if the key doesnt exist -> does not overwrite!
+
+
 
 
 
