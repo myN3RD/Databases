@@ -34,6 +34,10 @@ ________________
 
 https://cloud.mongodb.com/v2#/org/637169a6ab3a767f39201fe8/projects
 
+https://cloud.mongodb.com/v2/6376945c84680d511f6cba8f#/clusters/detail/Cluster0/connect?clusterId=Cluster0
+-> copy the "connection string"
+-> go to compass app and connect with the "connection string"
+
 
 NOTE:
 
