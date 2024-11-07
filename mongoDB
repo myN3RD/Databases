@@ -28,6 +28,10 @@ mongoDB
           USAGE
           _____
 
+NOTE: after a while - mongoDB is disconnecting collections
+
+-> just click on the "Resume" button when being logged in , in mongodb website
+
 
 PROJECT OVERVIEW
 ________________
